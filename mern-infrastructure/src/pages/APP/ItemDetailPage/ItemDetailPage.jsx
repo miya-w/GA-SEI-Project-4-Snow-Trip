@@ -31,19 +31,23 @@ export default function ItemDetailPage( ) {
         <div className="details-container columns">
           <section className='details-image column is-half'>
             <div className="details-img-container flex-ctr-ctr">
-              {/* <img src={selectedItem.picture} alt={selectedItem.name} /> */}
+              <img src={selectedItem.image} alt={selectedItem.name} />
             </div>
           </section>
           <section className='details-info column auto'>
-            {/* <p className='right'>SKU: {selectedItem.itemSKU}</p> */}
             <h1>{selectedItem.name}</h1>
-            <h2>{selectedItem.state}</h2>
-            <h5>Lift: &nbsp;{selectedItem.lift}</h5>
-            <p>{selectedItem.website}</p>
-            {/* <button 
-              className='button is-rounded is-responsive' 
-              onClick={() => handleAddToCart(itemId)}
-            >Add to Cart</button> */}
+            <h2>{selectedItem.subtitle}</h2>
+            <p>{selectedItem.state}</p>
+            <p>Lift: &nbsp;{selectedItem.lift}</p>
+            <p>Slope: &nbsp;{selectedItem.slope}&nbsp;KM</p>
+            <p>Elevation:&nbsp;{selectedItem.elevation}</p>
+            <a href={selectedItem.website}>WebSite</a>
+            <p>{selectedItem.description}</p>
+            <div>
+            <img src={selectedItem.trail} alt={selectedItem.name} />
+            </div>
+            
+
           </section>
         </div>
       </main>
