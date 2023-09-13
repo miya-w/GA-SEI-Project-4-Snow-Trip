@@ -12,3 +12,6 @@ export async function getById(id) {
   return sendRequest(`${BASE_URL}/${id}`);
 }
 
+export function getDetails(itemName) {
+  return sendRequest(`${BASE_URL}/${itemName}`)
+}

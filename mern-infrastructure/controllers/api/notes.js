@@ -1,4 +1,4 @@
-const User = require('../../models/user');
+// const User = require('../../models/user');
 const Note = require('../../models/note');
 
 module.exports = {
@@ -10,8 +10,15 @@ module.exports = {
 
 async function create(req, res) {
   try {
+    console.log(req.body)
     const newNote = {
-      text: req.body.newNote,
+
+      date: req.body.date,
+      country: req.body.country,
+      skiresort: req.body.skiresort,
+      text: req.body.text,
+
+      // text: req.body.newNote,
       user: req.user._id
     };
     const note = await Note.create(newNote);

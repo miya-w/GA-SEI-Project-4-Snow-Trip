@@ -2,14 +2,14 @@
 
 /* CSS Custom Properties */
 :root {
-  --white: #FFFFFF;
-  --tan-1: #FBF9F6;
-  --tan-2: #E7E2DD;
-  --tan-3: #E2D9D1;
-  --tan-4: #D3C1AE;
-  --orange: #F67F00;
-  --text-light: #968c84;
-  --text-dark: #615954;
+  --white: #F6F6F6;
+  --tan-1: #F4F3E8;
+  --tan-2: #B8D9D7;
+  --tan-3: #6DB4D4;
+  --tan-4: #70AABB;
+  --orange: #008BA9;
+  --text-light: #347290;
+  --text-dark: #103649;
 }
 
 *, *:before, *:after {
@@ -23,7 +23,7 @@ body {
   sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  background-color: var(--tan-4);
+  background-color: var(--tan-1);
   padding: 2vmin;
   height: 100vh;
 }
@@ -153,3 +153,99 @@ button[type="submit"] {
   grid-column: span 2;
   margin: 1vmin 0 0;
 }
+
+/* ---- */
+
+/* navbar */
+ nav {
+  display: flex;
+  gap: 16px;
+  justify-content: end;
+  max-width: 1200px;
+  margin: 0 auto;
+  border: grey dotted;
+}
+nav  {
+  margin-right: auto;
+  border-bottom: 3px solid var(--primary);
+}
+nav a{
+  text-decoration: none;
+  padding: 6px;
+  border-radius: 4px;
+}
+header nav a.active {
+  background: var(--primary);
+}
+
+/* CategoryList */
+.CategoryList{
+  border: grey dotted;
+}
+
+/* MenuList */
+
+.MenuList{
+  border: solid grey;
+  display: grid;
+  grid-gap: 5px; 
+  grid-template-columns: repeat(auto-fill,minmax(360px, 1fr) );
+ grid-template-rows: 1fr;
+}
+
+
+
+/* MenuListItem */
+.MenuListItem{
+  border: dotted grey;
+  cursor:pointer;
+    min-height: 200px;
+    text-align: center;
+   background-color: var(--tan-4);
+    font-size:3em;
+    border-radius:1px;
+    transition: all 0.3s linear;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+/* .MenuListItem {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 3vmin;
+  padding: 2vmin;
+  color: var(--text-light);
+  background-color: var(--white);
+  border: .1vmin solid var(--tan-3);
+  border-radius: 1vmin;
+  font-size: 4vmin;
+}
+
+.MenuListItem .emoji {
+  height: 8vw;
+  width: 8vw;
+  font-size: 4vw;
+  background-color: var(--tan-1);
+  border: .1vmin solid var(--tan-3);
+  border-radius: 1vmin;
+}
+
+.MenuListItem .buy {
+  display: flex;
+  flex-direction: column;
+}
+
+.MenuListItem .buy span {
+  font-size: 1.7vw;
+  text-align: center;
+  color: var(--text-light);
+}
+
+.MenuListItem .name {
+  font-size: 2vw;
+  text-align: center;
+  color: var(--text-light);
+}
+
+ */

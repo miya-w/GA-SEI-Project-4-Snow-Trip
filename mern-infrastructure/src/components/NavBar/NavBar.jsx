@@ -9,13 +9,14 @@ export default function NavBar({user,setUser}){
     return(
     
         <nav>
-            <Link to="/itinerary">My Itinerary</Link>
+            
+            {/* <Link to="/orders">Order History</Link> */}
             &nbsp;| &nbsp;
-            <Link to="/orders">Order History</Link>
-            &nbsp;| &nbsp;
-            <Link to="/orders/new">New Order</Link>
+            <Link to="/">Ski Resorts</Link>
             &nbsp;| &nbsp;
             <span>Welcome,{user.name}</span>
+            &nbsp;| &nbsp;
+            <Link to="/itinerary">My Itinerary</Link>
             &nbsp;| &nbsp;
             <Link to="" onClick={handleLogOut}>Log Out</Link>
         </nav>

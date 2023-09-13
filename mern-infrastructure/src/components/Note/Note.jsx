@@ -5,6 +5,12 @@ import './Note.css';
 export default function Note({ note, notes, setNotes }) {
   const [visible, setVisible] = useState(false);
   const [editNote, setEditNote] = useState(note.text);
+//   const [editNote, setEditNote] = useState([
+//     note.text,
+//     note.date,
+//     note.skiresort,
+//     note.country,
+// ]);
 
   const date = new Date(note.createdAt)
 
@@ -46,11 +52,20 @@ export default function Note({ note, notes, setNotes }) {
       <p className="note-date">{date.toLocaleString()} &nbsp;- </p>
       { visible && 
         <div>
+       
           <input onKeyDown={handleKeyPress} value={editNote} onChange={handleChange} />
+          <p className="note-text">&nbsp;&nbsp;{note.date}</p>
+      <p className="note-text">&nbsp;&nbsp;{note.country}</p>
+      <p className="note-text">&nbsp;&nbsp;{note.skiresort}</p>
+        <p className="note-text">&nbsp;&nbsp;{note.text}</p>
         </div>
       }
       { !visible &&
       <>
+      <p className="note-text">&nbsp;&nbsp;{note.date}</p>
+      <p className="note-text">&nbsp;&nbsp;{note.country}</p>
+      <p className="note-text">&nbsp;&nbsp;{note.skiresort}</p>
+      <p className="note-text">&nbsp;&nbsp;{note.skiresort}</p>
         <p className="note-text">&nbsp;&nbsp;{note.text}</p>
         <button 
           onClick={toggleInput}
