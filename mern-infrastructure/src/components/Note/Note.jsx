@@ -12,7 +12,10 @@ export default function Note({ note, notes, setNotes }) {
 //     note.country,
 // ]);
 
-  const date = new Date(note.createdAt)
+  // let date = new Date(note.createdAt)
+  let date = new Date(note.createdAt)
+  // date = date.split('T', 1);
+
 
   async function handleDelete() {
     const deleteNote = await notesAPI.deleteNote(note._id);
@@ -53,18 +56,14 @@ export default function Note({ note, notes, setNotes }) {
       { visible && 
         <div>
        
-          <input onKeyDown={handleKeyPress} value={editNote} onChange={handleChange} />
-          <p className="note-text">&nbsp;&nbsp;{note.date}</p>
-      <p className="note-text">&nbsp;&nbsp;{note.country}</p>
-      <p className="note-text">&nbsp;&nbsp;{note.skiresort}</p>
-        <p className="note-text">&nbsp;&nbsp;{note.text}</p>
+      <input onKeyDown={handleKeyPress} value={editNote} onChange={handleChange} />
+
         </div>
       }
       { !visible &&
       <>
-      <p className="note-text">&nbsp;&nbsp;{note.date}</p>
+      <p className="note-text">&nbsp;&nbsp;{new Date(note.date).toDateString()}</p>
       <p className="note-text">&nbsp;&nbsp;{note.country}</p>
-      <p className="note-text">&nbsp;&nbsp;{note.skiresort}</p>
       <p className="note-text">&nbsp;&nbsp;{note.skiresort}</p>
         <p className="note-text">&nbsp;&nbsp;{note.text}</p>
         <button 
@@ -73,14 +72,15 @@ export default function Note({ note, notes, setNotes }) {
         >
         Edit
         </button>
-      </>
-      }
-      <button 
+        <button 
         className="delete-note"
         onClick={handleDelete}
       >
       X
       </button>
+      </>
+      }
+     
     </div>
   );
 }

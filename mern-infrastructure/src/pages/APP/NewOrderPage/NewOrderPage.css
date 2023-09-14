@@ -1,34 +1,63 @@
-.filter-container {
-  margin-left: 2.5em;
-  margin-top: 2.5em;
-  width: 10.5% !important;
-  /* border-right: 1px solid var(--light-purple); */
-  padding: 0;
+.main-main{
+  margin: 0 auto;
+  max-width: 1800px;
+  /* display: grid;
+  grid-template-columns: 0.5fr 4fr;
+  grid-template-rows: 20% 1fr 30px; */
+
+    display: grid;
+    grid-template-columns: 10% auto;
+    grid-template-rows: 1fr;
+    grid-column-gap: 0px;
+    grid-row-gap: 0px;
+  
+}
+.main-page{
+  border: dotted red;
+  height: 100vh;
+ 
+  
 }
 
-.filter-container h1 {
-  font-size: 1.4em;
-  border-bottom: 1px solid var(--white-line);
-  margin-right: 1.2em;
-  margin-bottom: 1em;
+.main-banner{
+  height: 25vh;
+  position: relative;
+  border: dotted red;
+}
+aside{
+  border: dotted grey;
+  position: relative;
 }
 
-.product-container {
-  /* margin-top: 5vmin;
-  margin-left: 2.5vmin; */
-  margin: 2.5em 1em 0 0em;
-  padding: 0;
-  display: grid;
-  grid-template-columns: repeat(4, 1fr);
+
+@import url('https://fonts.googleapis.com/css2?family=Geo&family=Inter:wght@500;600&family=Poppins:wght@200&family=REM:wght@500&family=Shippori+Mincho+B1&display=swap');
+
+.snow {
+    border: dotted grey;
+    font-family: 'Shippori Mincho B1', serif;
+    color: white;
+    min-width: 300px;
 }
 
-.IndexPage {
-  background: linear-gradient(to bottom, rgba(154, 128, 199, 0.3), #fff);  
+.snow-kanji {
+    font-size: 20vmin;
+    z-index: -1;
 }
 
-#idx-inner {
-  margin-top: 0;
+.relative{
+    position: relative;
 }
+
+.absolute p{
+    border: dotted grey;
+   position: absolute;
+   bottom: 120px;
+  right: 0;
+  color: white;
+  margin-left:5% ;
+
+}
+
 
 
 /* .NewOrderPage {

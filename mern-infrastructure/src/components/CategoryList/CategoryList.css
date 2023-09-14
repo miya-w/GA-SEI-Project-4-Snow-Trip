@@ -1,15 +1,27 @@
 .CategoryList {
     color: var(--text-light);
     list-style: none;
-    padding: 0;
-    font-size: 1.7vw;
+    padding:5%;
+    margin: 10px;
+    font-size: 1.5vw;
+    transform: rotate(-90deg);
+    border: dotted grey;
+    display: flex;
+    position: absolute;
+    right: 0;
+    top: 20%;
+
   }
   
   .CategoryList li {
+    
     padding: .6vmin;
+
     text-align: center;
     border-radius: .5vmin;
     margin-bottom: .5vmin;
+
+
   }
       
   .CategoryList li:hover:not(.active) {

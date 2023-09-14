@@ -1,19 +1,31 @@
-// import './MenuListItem.css';
+import './MenuListItem.css';
 import { Link } from 'react-router-dom';
 
 export default function MenuListItem({ menuItem }) {
   return (
-    <div className="MenuListItem">
+    <div className="term">
     <Link to={`/items/${ menuItem._id}`}>
-      <div className="name">{menuItem.name}</div>
-      <div className="emoji flex-ctr-ctr">{menuItem.state}</div>
-      <div className="buy">
-        <span>Lift:{menuItem.lift}</span>
-        {/* <button className="btn-sm" onClick={() => handleAddToOrder(menuItem._id)}>
-          ADD
-        </button> */}
-      </div>
-      </Link>
+    <dt className='item-card flex-col '>
+    <img className="cover-img" src={menuItem.image} alt={menuItem.title} />
+    <div>
+    <span className="name">{menuItem.name}</span> 
+    
+   
+    </div>
+     
+    </dt>
+    <dd>
+    <span className='item-state'>{menuItem.state}</span>
+    </dd>
+    <dd>
+    <span className='item-state'>lift: {menuItem.lift}</span>
+    &nbsp;
+    <span className='item-state'>slope: {menuItem.slope}KM</span>
+    &nbsp;
+   
+    </dd>
+      
+    </Link>
     </div>
   );
 }

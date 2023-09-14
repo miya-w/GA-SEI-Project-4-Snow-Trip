@@ -1,4 +1,4 @@
-// import './MenuList.css';
+
 import MenuListItem from '../MenuListItem/MenuListItem';
 
 export default function MenuList({ menuItems,}) {
@@ -6,12 +6,13 @@ export default function MenuList({ menuItems,}) {
     <MenuListItem
       key={item._id}
       menuItem={item}
-    //   handleAddToOrder={handleAddToOrder}
     />
   );
   return (
-    <main className="MenuList">
-      {items}
+    <main >
+    <dl className="dictionary">
+    {items}
+    </dl>
     </main>
   );
 }

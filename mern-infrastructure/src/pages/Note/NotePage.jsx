@@ -5,7 +5,7 @@ import ListOfNotes from "../../components/ListOfNotes/ListOfNotes";
 
 export default function NotesPage() {
   const [notes, setNotes] = useState([]);
-  const [sortOrder, setSortOrder] = useState('asc');
+
 
   useEffect(function() {
     async function getNotes() {
@@ -15,39 +15,20 @@ export default function NotesPage() {
     getNotes()
   }, []);
 
-  function toggleOrder() {
-    const newOrder = sortOrder === 'asc' ? 'desc' : 'asc'
-    setSortOrder(newOrder);
-  }
 
-  function handleSort(evt) {
-    toggleOrder();
-    // eslint-disable-next-line 
-    const formatNotes = notes.sort(function(a, b) {
-      const aDate = new Date(a.createdAt)
-      const bDate = new Date(b.createdAt)
-      
-      if (sortOrder === 'asc') return bDate - aDate
-      if (sortOrder === 'desc') return aDate - bDate
-    })
-    setNotes([...formatNotes]);
-  }
 
   return (
-    <>
-      <AddNoteForm notes={notes} setNotes={setNotes} sortOrder={sortOrder} />
+    <div className="note-pge-container">
+      <AddNoteForm notes={notes} setNotes={setNotes}  />
       {
         notes.length !== 0 ? 
-        <div>
-          <button onClick={handleSort}>
-            {sortOrder === 'desc' ? 'Sort in Descending Order' : 'Sort in Ascending Order'}
-          </button>
+        <div className="note-ouput-container">
           <h2>My Notes</h2>
           <ListOfNotes notes={notes} setNotes={setNotes} />
         </div>
         :
         <h2>No Notes Yet!</h2>
       }
-    </>
+    </div>
   );
 }

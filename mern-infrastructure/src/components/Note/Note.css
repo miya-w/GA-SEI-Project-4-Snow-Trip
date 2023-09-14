@@ -8,6 +8,9 @@
     border-radius: 1vmin;
     margin-left: 2vmin;
     margin-right: 2vmin;
+    max-width: 1000px;
+    margin: 0 auto;
+    border: dotted red;
   }
   
   .note-container input {
@@ -49,3 +52,18 @@
   .logout:hover {
     color: rgba(0, 0, 0, 0.7)
   }
+
+
+  .note-pge-container{
+    border: dotted grey;
+    height: 100vh;
+  } 
+
+
+/* .note-ouput-container{
+  border: red dotted;
+  max-width: 1200px;
+} */
+
+
+ 

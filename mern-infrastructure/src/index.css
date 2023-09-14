@@ -23,8 +23,7 @@ body {
   sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  background-color: var(--tan-1);
-  padding: 2vmin;
+  /* background-color: var(--tan-1); */
   height: 100vh;
 }
 
@@ -43,6 +42,10 @@ code {
 
 .align-rt {
   text-align: right;
+}
+
+.align-lft {
+  text-align: left;
 }
 
 .smaller {
@@ -85,6 +88,8 @@ code {
   background-color: var(--tan-1);
   border: .1vmin solid var(--tan-3);
   border-radius: 1vmin;
+  max-width: 900px;
+  margin: 0 auto;
 }
 
 p.error-message {
@@ -156,27 +161,6 @@ button[type="submit"] {
 
 /* ---- */
 
-/* navbar */
- nav {
-  display: flex;
-  gap: 16px;
-  justify-content: end;
-  max-width: 1200px;
-  margin: 0 auto;
-  border: grey dotted;
-}
-nav  {
-  margin-right: auto;
-  border-bottom: 3px solid var(--primary);
-}
-nav a{
-  text-decoration: none;
-  padding: 6px;
-  border-radius: 4px;
-}
-header nav a.active {
-  background: var(--primary);
-}
 
 /* CategoryList */
 .CategoryList{
@@ -196,7 +180,7 @@ header nav a.active {
 
 
 /* MenuListItem */
-.MenuListItem{
+/* .MenuListItem{
   border: dotted grey;
   cursor:pointer;
     min-height: 200px;
@@ -206,7 +190,12 @@ header nav a.active {
     border-radius:1px;
     transition: all 0.3s linear;
     font-family: Arial, Helvetica, sans-serif;
-}
+} */
+
+/* Main */
+
+
+
 
 /* .MenuListItem {
   width: 100%;
@@ -249,3 +238,80 @@ header nav a.active {
 }
 
  */
+
+
+ .dictionary {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between; 
+  margin: 2rem auto;
+  max-width: 90%;
+  display: grid;
+    grid-gap: 20px;
+    grid-template-columns: repeat(auto-fill,minmax(360px, 1fr) );
+    grid-template-rows: 1fr;
+    padding: 3vmin;
+   
+}
+
+.dictionary > .term {
+  text-align: center;
+  max-width: 20rem;
+  margin-bottom: 2rem;
+  padding: 2rem;
+  border-radius: 3px;
+  box-shadow: 0 2px 0 rgba(0, 0, 0, 0.05), 0 5px 20px rgba(0, 0, 0, 0.1);
+  background-color: #fff;
+  transition: all 100ms ease-in-out;
+  border-radius: 5%;
+  opacity: 0.8;
+}
+
+.dictionary > .term > dt {
+  margin-bottom: 1rem;
+}
+
+dt {
+  color: var(--text-dark);
+  line-height: 1;
+}
+
+dt span {
+  font-size: 100%;
+  font-weight: 300;
+}
+
+
+dd {
+  font-size: 92.5%;
+  margin-left: 0;
+}
+
+dd dt {
+  margin-top: 1rem;
+  margin-bottom: 0.25rem;
+  font-weight: 600;
+  font-size: inherit;
+}
+
+dd dl {
+  font-size: 90%;
+  margin: 1rem auto 0 auto;
+  letter-spacing: 0.33px;
+  max-width: 15rem;
+}
+
+dd dl .term {
+  margin-bottom: 1rem;
+}
+
+
+.term img{
+  width: 250px;
+  height: 200px;
+  object-fit: cover;
+}
+
+.item-state{
+  color: var(--orange);
+}
