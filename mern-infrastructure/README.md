@@ -1,5 +1,5 @@
 # General Assembly SEI Project 4 - Snow Trip
-[snowTrip](https://github.com/miya-w/GA-SEI-Project-4-Snow-Trip/blob/main/mern-infrastructure/src/components/images/Screen%20Shot%202023-09-15%20at%2010.53.46%20am.png)
+![snowTrip](https://github.com/miya-w/GA-SEI-Project-4-Snow-Trip/blob/main/mern-infrastructure/src/components/images/Screen%20Shot%202023-09-15%20at%2010.53.46%20am.png)
 ## Overview
 The forth project of the software engineering immersive course at GA Australia. The assignment was to create a full-stack application with MERN This project was completed in a week.
 About **Snow Trip**. It’s a platform is for planning the snow trip in both Australia and Japan.
