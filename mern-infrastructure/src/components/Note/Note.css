@@ -10,7 +10,7 @@
     margin-right: 2vmin;
     max-width: 1000px;
     margin: 0 auto;
-    border: dotted red;
+    /* border: dotted red; */
   }
   
   .note-container input {
@@ -55,7 +55,7 @@
 
 
   .note-pge-container{
-    border: dotted grey;
+   /* border: dotted grey; */ 
     height: 100vh;
   } 
 

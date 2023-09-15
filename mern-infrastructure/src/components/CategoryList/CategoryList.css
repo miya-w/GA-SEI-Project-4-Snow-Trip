@@ -3,9 +3,9 @@
     list-style: none;
     padding:5%;
     margin: 10px;
-    font-size: 1.5vw;
+    font-size: 1.5vh;
     transform: rotate(-90deg);
-    border: dotted grey;
+
     display: flex;
     position: absolute;
     right: 0;

@@ -1,0 +1,41 @@
+
+
+.snow-banner-kanji {
+    font-size: 150px;
+    color: rgba(250, 250, 250, 0.8);
+    bottom: -20%;
+    right:30%;
+    font-weight:300;
+}
+
+.snow-banner-sub{
+    bottom: 20%;
+    right:20%
+}
+
+.relative{
+    position: relative;
+}
+.absolute{
+    position: absolute;
+} 
+
+.snow-flake-1{
+    top: 30%;
+    right: 60%;
+} 
+.snow-flake-2{
+    top: 40%;
+    right: 50%;
+} 
+
+.snow-flake-3{
+    top: 50%;
+    right: 25%;
+} 
+
+.snow-flake-4{
+    top: 10%;
+    left: 10%;
+} 
+

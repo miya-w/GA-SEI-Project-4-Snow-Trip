@@ -1,0 +1,46 @@
+.AuthPage {
+
+    height: 100vh;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    /* border-radius: 2vmin; */
+   
+    /* border: red dotted; */
+    
+  }
+  
+  .AuthPage h3 {
+    margin-top: 4vmin;
+    text-align: center;
+    color: var(--text-light);
+    cursor: pointer;
+  }
+
+  .authPage-1{
+     /* border: dotted grey; */
+    height: 100vh;
+    flex-basis: 50%;
+    background-image: url(../../../components/images/bg-1.jpg);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .authPage-2{
+     /* border: dotted grey; */
+    flex-basis: 50%;
+    background-color: white;
+   height: 100vh;
+    padding: 4vmin;
+    display:flex ;
+    align-items: center;
+    justify-content: center;
+    
+  }
+
+
+  .relative{
+    position: relative;
+}
+  

@@ -1,9 +1,6 @@
 .main-main{
   margin: 0 auto;
   max-width: 1800px;
-  /* display: grid;
-  grid-template-columns: 0.5fr 4fr;
-  grid-template-rows: 20% 1fr 30px; */
 
     display: grid;
     grid-template-columns: 10% auto;
@@ -13,7 +10,7 @@
   
 }
 .main-page{
-  border: dotted red;
+  /* border: dotted red; */
   height: 100vh;
  
   
@@ -22,58 +19,24 @@
 .main-banner{
   height: 25vh;
   position: relative;
-  border: dotted red;
+  /* border: dotted green; */
+  font-family: 'Shippori Mincho B1', serif;
+  color: white;
 }
 aside{
-  border: dotted grey;
+   /* border: dotted grey; */
   position: relative;
 }
 
 
 @import url('https://fonts.googleapis.com/css2?family=Geo&family=Inter:wght@500;600&family=Poppins:wght@200&family=REM:wght@500&family=Shippori+Mincho+B1&display=swap');
 
-.snow {
-    border: dotted grey;
-    font-family: 'Shippori Mincho B1', serif;
-    color: white;
-    min-width: 300px;
-}
 
-.snow-kanji {
-    font-size: 20vmin;
-    z-index: -1;
-}
+
+
 
 .relative{
     position: relative;
 }
 
-.absolute p{
-    border: dotted grey;
-   position: absolute;
-   bottom: 120px;
-  right: 0;
-  color: white;
-  margin-left:5% ;
-
-}
-
-
-
-/* .NewOrderPage {
-    height: 100%;
-    display: grid;
-    grid-template-columns: 1.6fr 3.5fr 3fr;
-    grid-template-rows: 1fr;
-    background-color: var(--white);
-    border-radius: 2vmin;
-  }
-  
-  .NewOrderPage aside {
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    align-items: center;
-    margin: 3vmin 2vmin;
-  } */
 

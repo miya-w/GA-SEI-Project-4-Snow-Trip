@@ -1,0 +1,28 @@
+@import url('https://fonts.googleapis.com/css2?family=Geo&family=Inter:wght@500;600&family=Poppins:wght@200&family=REM:wght@500&family=Shippori+Mincho+B1&display=swap');
+
+.snow {
+     /* border: dotted grey; */
+    font-family: 'Shippori Mincho B1', serif;
+    color: white;
+    /* min-width: 300px; */
+}
+
+.snow-kanji {
+    font-size: 18vmin;
+    z-index: -1;
+}
+
+.relative{
+    position: relative;
+}
+
+
+
+
+.snow-sub{
+    font-family: 'Shippori Mincho B1', serif;
+    color: white;
+    font-size: 1.5vmin;
+    bottom: 30%;
+    right: 5%;
+}

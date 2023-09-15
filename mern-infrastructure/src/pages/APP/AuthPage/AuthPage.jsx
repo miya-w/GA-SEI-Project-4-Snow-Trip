@@ -17,7 +17,7 @@ export default function AuthPage({setUser}){
 
       </div>
       </div>
-      <div className="authPage-2">
+      <div className="authPage-2 relative">
       <div>
       {showLogin ? <LoginForm setUser={setUser} /> : <SignUpForm setUser={setUser} />}
       <h3 onClick={() => setShowLogin(!showLogin)}>{showLogin ? 'SIGN UP' : 'LOG IN'}</h3>

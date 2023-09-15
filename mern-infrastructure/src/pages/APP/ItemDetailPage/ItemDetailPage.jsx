@@ -35,15 +35,16 @@ export default function ItemDetailPage() {
         <div className='detail details-info flex-col align-lft  '>
           <h1>{selectedItem.name}</h1>
           <h2>{selectedItem.subtitle}</h2>
+          <hr/>
           <p>{selectedItem.state}</p>
           <p>Lift: &nbsp;{selectedItem.lift}</p>
           <p>Slope: &nbsp;{selectedItem.slope}&nbsp;KM</p>
           <p>Elevation:&nbsp;{selectedItem.elevation}</p>
           <a href={selectedItem.website}>WebSite</a> 
         </div> 
-
+        
       </div>
-
+      <hr/>
       <div className='description'>
         <p>{selectedItem.description}</p>
       </div>
