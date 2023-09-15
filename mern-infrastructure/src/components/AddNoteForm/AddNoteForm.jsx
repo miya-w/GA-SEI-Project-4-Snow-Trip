@@ -36,14 +36,11 @@ export default function AddNoteForm({ notes, setNotes, sortOrder }) {
           <label>date</label>
           <input type="date" name="date" value={newNote.date} onChange={handleChange}/>
           <label>Country</label>
-          {/* <input type="country" name="country" value={newNote.country} onChange={handleChange}/> */}
           <select name="country" value={newNote.country} onChange={handleChange}>
             <option value="">Select a country</option>
             <option value="Australia">Australia</option>
             <option value="Japan">Japan</option>
           </select>
-          {/* <label>Ski Resort</label>
-          <input type="skiresort" name="skiresort" value={newNote.skiresort} onChange={handleChange}/> */}
           <label>Ski Resort</label>
             <select name="skiresort" value={newNote.skiresort} onChange={handleChange}>
               <option value="">Select a ski resort</option>
@@ -54,8 +51,6 @@ export default function AddNoteForm({ notes, setNotes, sortOrder }) {
                   <option value="Falls Creek">Falls Creek</option>
                   <option value="Mt Hotham">Mt.Hotham</option>
                   <option value="Mt Buller">Mt.Buller</option>
-                  
-                
                 </>
               )}
               {newNote.country === 'Japan' && (
